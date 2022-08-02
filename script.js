@@ -1,7 +1,7 @@
 function blast(color){
     if(color == "red"){
-        document.getElementById('test').style.animation = "balloon 3.2s ease-in;" 
-        // document.body.style.background = "red";
+        // document.getElementById('test').style.animation = "balloon 3.2s ease-in;" 
+        document.body.style.background = "red";
 
     }
     else if(color == "blue"){

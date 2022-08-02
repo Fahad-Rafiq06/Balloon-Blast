@@ -1,29 +1,48 @@
 body{
     background: white;
 }
-
-.main-heading h1{
+h1.main-heading{
     text-align: center;
 }
 
-div #baloons div{
+#balloons div{
     display: flex;
     flex-direction: column;
-    width: 100px;
-    height: 130px;
+    width: 80px;
+    height: 100px;
     border: 0px solid black;
 }
 
+  
+#balloons div {
+    -webkit-animation: upNdown 10s infinite linear;
+    animation: upNdown 10s infinite linear;
+}
+@-webkit-keyframes upNdown {
+     0% { transform: translateY(50px); }
+     50% { transform: translateY(-800px); }
+     100% { transform: translateY(-1000px);}
+}
+
+@keyframes upNdown {
+     0% { transform: translateY(50px);}
+     50% { transform: translateY(-800px); }
+     100% {transform: translateY(-1000px); }
+}
+
 #red{
+    /* animation: MoveUpDown 1s linear infinite; */
     background-color: red;
     border-radius: 80px;
     cursor:crosshair;
+    margin: 3% 0 0 4%;
     /* animation: balloon 15s 3.2s infinite ease-in; */
 }
 
 #blue{
     background-color: blue;
     border-radius: 80px;
+    margin: 3% 0 0 60%;
     cursor:crosshair;
 }
 
@@ -32,6 +51,8 @@ div #baloons div{
     background-color: pink;
     border-radius: 80px;
     cursor:crosshair;
+    margin: 3% 0 0 40%;
+
 }
 
 
@@ -39,6 +60,7 @@ div #baloons div{
     background-color: orange;
     border-radius: 80px;
     cursor:crosshair;
+    margin: 1% 0 0 15%;
 }
 
 
@@ -46,4 +68,5 @@ div #baloons div{
     background-color: purple;
     border-radius: 80px;
     cursor:crosshair;
+    margin: 2% 0 0 80%;
 }
